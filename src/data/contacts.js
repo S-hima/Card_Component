@@ -19,6 +19,13 @@ const contacts = [
         "https://www.dlf.pt/dfpng/middlepng/569-5693658_dummy-user-image-png-transparent-png.png",
       phone: "+977 9845678900",
       email: "carren@hotmail.com"
+    },
+    {
+      name: "Seema Bhattarai",
+      imgURL:
+        "https://www.dlf.pt/dfpng/middlepng/569-5693658_dummy-user-image-png-transparent-png.png",
+      phone: "+977 9845612345",
+      email: "she2shima@gmail.com"
     }
   ];
 

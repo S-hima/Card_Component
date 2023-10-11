@@ -1,23 +1,38 @@
+import Card from './components/Card';
 import './App.css';
+import contacts from './data/contacts';
 
 function App() {
+
   return (
     <div>
-      <h1 className="heading">My Contacts</h1>
-      <div className="card">
-        <div className="top">
-          <h2 className="name">Beyonce</h2>
-          <img
-            className="circle-img"
-            src="https://iau.edu.lc/wp-content/uploads/2016/09/dummy-image.jpg"
-            alt="avatar_img"
-          />
-        </div>
-        <div className="bottom">
-          <p className="info">+123 456 789</p>
-          <p className="info">b@beyonce.com</p>
-        </div>
-      </div>
+      
+      <Card 
+      name={contacts[0].name}
+      img={contacts[0].imgURL}
+      tel={contacts[0].phone}
+      email={contacts[0].email}/>
+
+      <Card 
+      name={contacts[1].name}
+      img={contacts[1].imgURL}
+      tel={contacts[1].phone}
+      email={contacts[1].email}/>
+
+      <Card 
+      name={contacts[2].name}
+      img={contacts[2].imgURL}
+      tel={contacts[2].phone}
+      email={contacts[2].email}/>
+
+<Card 
+      name={contacts[3].name}
+      img={contacts[3].imgURL}
+      tel={contacts[3].phone}
+      email={contacts[3].email}/>
+
+      
+      
     </div>
   );
 }
