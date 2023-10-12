@@ -1,21 +1,21 @@
 import React from 'react'
+import Profile from './Profile'
+import Detail from './Detail'
+import Header from './Header'
 
-function Card({name,img,tel,email}) {
+function Card({name, img,tel,email,}) {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
       <div className="card">
         <div className="top">
-          <h2 className="name">{name}</h2>
-          <img
-            className="circle-img"
-            src={img}
-            alt="avatar_img"
-          />
+          <Header newNAME={name}/>
+          <Profile newImg={img} />
         </div>
         <div className="bottom">
-          <p className="info">{tel}</p>
-          <p className="info">{email}</p>
+          <Detail info={tel} />
+          <Detail info={email} />
+          <Detail info="2001-11-11" />
         </div>
       </div>
     </div>
